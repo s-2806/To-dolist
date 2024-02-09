@@ -1,0 +1,143 @@
+*{
+    background:linear-gradient(135deg,#153677,#4e085f) ;
+    scroll-behavior: smooth;
+
+}
+
+.one{
+    color: greenyellow;
+    font-size: 150px;
+
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+   font-size: xx-large;
+   gap:40px;
+   position: sticky;
+}
+.nav1{
+    width: 500px ;
+    height: 40px;
+    margin-left: 250px;
+}
+.nav2{
+    width: 500px ;
+height: 40px;
+}
+#btn2{
+    box-shadow: 5px;
+    width: 500px;
+    height:50px;
+    font-size: x-large;
+    color: white;
+}
+#btn3{
+    box-shadow: 5px;
+    width: 500px;
+    height:50px;
+    font-size: x-large;
+    color: white;
+}
+.upcont{
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(3,100px);
+  margin-top: 200px;
+    height: 300px;
+    margin-bottom: 200px;
+
+}
+.box1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+    width:50px;
+    border-radius: 40px;
+}
+.box2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    width:50px;
+    border-radius: 40px;
+}
+.box3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-self: center;
+    width:700px
+    
+}
+.btn1{
+    align-self: center;
+    width:50px;
+    border-radius: 40px;
+    background: white;
+}
+#description{
+    height: 50px;
+    border-radius: 40px;
+    width:900px;
+    font-size: 20px;
+    font-weight: 100;
+    background: white;
+}
+
+#number{
+
+    height: 40px;
+    border-radius: 40px;
+    width:250px;
+    font-size: 20px;
+    font-weight: 100;
+    background: white;
+}
+#btn1{
+
+    height: 50px;
+    border-radius: 40px;
+    width:250px;
+    font-size: 30px;
+    font-weight: 900;
+    background: rgb(255, 69, 40);
+    cursor: pointer;
+}
+#jobtype{
+
+    height: 40px;
+    border-radius: 40px;
+    width:250px;
+    font-size: 20px;
+    font-weight: 100;
+    background: white;
+}
+#upcont{
+    margin-top:200px;
+}
+#h11{
+    font-size: 80px;
+    
+    color: white;
+    font-weight: 1000;
+   }
+#h22{
+    font-size: 80px;
+   color: white;
+    font-weight: 1000;
+   }
+.fetch{
+    border-radius: 20px;
+    background: white;
+    width:600px;
+     padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    font-size: x-large;
+}
