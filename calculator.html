@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th><input type="text" placeholder="num1" id="num1"></th>
+            <th><input type="text" placeholder="num2" id="num2"></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th><button type="submit" id="Asubmit">A</button></th>
+            <th><button type="submit" id="Ssubmit">S</button></th>
+            <th><button type="submit" id="Msubmit">M</button></th>
+            <th><button type="submit" id="Dsubmit">D</button></th>
+        </tr>
+    </table>
+    <div id="result"></div>
+    <script>
+        const a = document.getElementById("num1");
+        const b = document.getElementById("num2");
+        const output = document.getElementById("result");
+        // const add = document.getElementById('Asubmit');
+        // const sub = document.getElementById('Ssubmit');
+        // const mult = document.getElementById('Msubmit');
+        // const div = document.getElementById('Dsubmit');
+        
+
+        document.getElementById("Asubmit").addEventListener('click',()=>{
+            const item = document.createElement('div');
+            item.value=a.value+b.value;
+            console.log(item.value);
+            output.textContent =(a.value)+(b.value);
+            console.log("addition done");
+            a.value='';
+            b.value='';
+            
+       })
+       document.getElementById("Ssubmit").addEventListener('click',()=>{
+            // const item = document.createElement('div');
+             console.log(a);
+             console.log(b);
+             console.log(output);
+            // item.value=a.value-b.value;
+           // console.log(item.value);
+            //console.log(item);
+            output.textContent=a.value-b.value;
+            a.value='';
+            b.value='';
+       })
+       document.getElementById("Msubmit").addEventListener('click',()=>{
+           // const item = document.createElement('div');
+            output.textContent=a.value*b.value;
+            console.log("mult done");
+            //output.appendChild(item);
+            a.value='';
+            b.value='';
+       })
+       document.getElementById("Dsubmit").addEventListener('click',()=>{
+            //const item = document.createElement('div');
+            output.textContent=a.value/b.value;
+            console.log("division done");
+            //output.appendChild(item);
+            a.value='';
+            b.value='';
+
+       })
+    </script>
+</body>
+</html>0
